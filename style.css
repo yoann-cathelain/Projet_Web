@@ -3,19 +3,23 @@
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
-.navbar{
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-left: 12.5%;
     width: 100%;
-    margin: auto;
+    margin: 0auto;
     background-color: white ;
     position: sticky;
-    top: 0px;
+    top:0px;
 }
-nav ul {
+.navbar ul {
     list-style-type: none;
+    flex: 1 1 auto;
 }
 .navbar ul li{
     float: left;
-    width: 25%;
+    width: 15%;
     text-align: center;
 }
 nav ul::after{
@@ -23,19 +27,14 @@ nav ul::after{
     display: table;
     clear: both;
 }
-.navbar a{
+.navbar a {
     display: block;
     text-decoration: none;
+    color: white;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
-    color: white;
 }
 .navbar a:hover{
-    color: black;
-    border-bottom: 2px solid white;
-    background-color: lightblue;
-}
-.sous-menu a:hover{
     color: black;
     border-bottom: 2px solid white;
     background-color: lightblue;
@@ -56,6 +55,17 @@ nav ul::after{
 }
 .menu:hover{
     background-color: darkblue; 
+}
+.navbar input[type="search"]{
+    float: none;
+    height: 30px;
+    width: 200px;
+}
+.navbar li button {
+    float: none;
+    margin-top: 5px;
+    height: 30px;
+
 }
 .navzone{
     width: 100%;
