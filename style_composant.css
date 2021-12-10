@@ -3,7 +3,11 @@
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
-.navbar{
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+nav{
     width: 100%;
     margin: 0auto;
     background-color: white ;
@@ -51,4 +55,13 @@ nav > ul li:hover .sous-menu {
 }
 .menu:hover{
     background-color: lightblue;
+}
+input[type="search"]{
+    float: none;
+    height: 30px;
+    width: 100;
+}
+button {
+    float: none;
+    height: 30px;
 }
