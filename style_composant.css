@@ -6,47 +6,47 @@
 .navbar {
     display: flex;
     justify-content: center;
-}
-nav{
+    margin-left: 12.5%;
     width: 100%;
     margin: 0auto;
     background-color: white ;
     position: sticky;
-    top: 0px;
+    top:0px;
 }
-nav ul {
+.navbar ul {
     list-style-type: none;
+    flex: 1 1 auto;
 }
-nav ul li{
+.navbar ul li{
     float: left;
-    width: 25%;
+    width: 15%;
     text-align: center;
 }
-nav ul::after{
+.navbar ul::after{
     content:"";
     display: table;
     clear: both;
 }
-nav a {
+.navbar a {
     display: block;
     text-decoration: none;
     color: white;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
-nav a:hover{
+.navbar a:hover{
     color: black;
     border-bottom: 2px solid white;
     background-color: lightblue;
 }
 .sous-menu {
     display: none;
-    background-color: lightblue;
+    background-color: darkblue;
 }
-nav > ul li:hover .sous-menu {
+.navbar > ul li:hover .sous-menu {
     display: block;
 }
-.sous-menu li{
+.navbar .sous-menu li{
     float: none;
     width: 100%;
 }
@@ -54,14 +54,16 @@ nav > ul li:hover .sous-menu {
     background-color: darkblue;
 }
 .menu:hover{
-    background-color: lightblue;
+    background-color: darkblue;
 }
-input[type="search"]{
+.navbar input[type="search"]{
     float: none;
     height: 30px;
-    width: 100;
+    width: 200px;
 }
-button {
+.navbar li button {
     float: none;
+    margin-top: 5px;
     height: 30px;
+
 }
