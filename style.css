@@ -67,6 +67,29 @@ nav ul::after{
     height: 30px;
 
 }
+
+.nouveaute {
+    list-style-type: none;
+    text-align: left;
+    
+}
+.items{
+    float: left;
+    width: 20%;
+}
+.img_items{
+    height: 10%;
+    width: 20%;
+}
+.texte{
+    text-align: left;
+}
+.prix{
+    text-align: right;
+}
+
+
+
 .navzone{
     width: 100%;
     background-color: darkcyan;
