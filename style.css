@@ -2,12 +2,16 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box  ;
+}
+body{
+    background-color:lightblue;
 }
 .navbar {
     display: flex;
     justify-content: center;
-    margin-left: 12.5%;
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
     margin: 0auto;
     position: sticky;
     top:0px
@@ -66,23 +70,26 @@ nav ul::after{
     height: 30px;
 
 }
-
+.titr_nouv {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .nouveaute {
     list-style-type: none;
-    text-align: left;
-    display: block;
-    
-}
-article .nouveaute a {
-    text-align: center;
+    display:block;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .items{
+    height: 200px;
+    border:solid;
     float: left;
     width: 20%;
 }
 .img_items{
-    height: 10%;
-    width: 20%;
+    height: 50%;
+    width: 50%;
 }
 .texte{
     text-align: left;
@@ -90,7 +97,6 @@ article .nouveaute a {
 .prix{
     text-align: right;
 }
-
 
 
 .navzone{
