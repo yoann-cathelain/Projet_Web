@@ -7,12 +7,16 @@
 body{
     background-color:lightblue;
 }
+
+/* barre du haut*/
+
 .navbar {
+    background-color: darkblue;
     display: flex;
     justify-content: center;
     width: 80%;
     padding-left: 10%;
-    margin: 0auto;
+    margin: 0 auto;
     position: sticky;
     top:0px
 }
@@ -62,14 +66,15 @@ nav ul::after{
 .navbar input[type="search"]{
     float: none;
     height: 30px;
-    width: 200px;
+    width: 80%;
 }
 .navbar li button {
     float: none;
-    margin-top: 5px;
     height: 30px;
-
 }
+
+/* première section */
+
 .titr_nouv {
     text-align: left;
     padding-left: 10%;
@@ -98,6 +103,7 @@ nav ul::after{
     text-align: right;
 }
 
+/* barre du bas */
 
 .navzone{
     width: 100%;
