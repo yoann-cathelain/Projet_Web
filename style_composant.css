@@ -14,74 +14,73 @@ body {
 nav.navbar {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-}
-.navbar ul {
-    list-style-type: none;  
-    flex: 1 1 auto;
-}
-.navbar ul li{
-    float: left;
-    width: 15%;
-    text-align: center;
     background-color: darkblue;
+    position: sticky;
+    top: 0x;
 }
-.navbar ul::after{
-    content:"";
-    display: table;
-    clear: both;
+nav.navbar ul {
+    list-style-type: none;  
+    display: flex;
 }
-.navbar a {
+nav.navbar ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+nav.navbar a {
     display: block;
     text-decoration: none;
     color: white;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
-.navbar a:hover{
+nav.navbar a:hover{
     background-color: rgb(103, 162, 180);
 }
-.sous-menu {
+nav.navbar .sous-menu {
     display: none;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0);
     background-color: darkblue;
     position: absolute;
     width: 100%;
+    z-index: 1000;
 }
-.navbar > ul li:hover .sous-menu {
-    display: block;
+nav.navbar > ul li:hover .sous-menu {
+    display: flex;
+    flex-flow: column wrap;
 }
-.navbar .sous-menu li{
-    float: none;
-    width: 100%;
+.sous-menu li{
+    flex: 1 1 auto;
+    text-align: left;
 }
-.menu {
-    background-color: rgba(10, 10, 134, 0.904);
-    font-weight: bold;
-    color: white;
-    position: relative;
+.sous-menu a{
+    padding: 10px;
+    border-bottom: none;
 }
-.menu:hover{
+.sous-menu a:hover{
+    border-bottom: none;
     background-color: lightblue;
 }
-.navbar li input[type="search"]{
-    float: left;
-    height: 40px;
-    width: 200px;
+.navbar li .search-bar{
+    display: inline-flex;
+    justify-items: flex-start;
+    border: none;
+    height: 100%;
+    width: 85%;
+}
+.search-button {
+    display: inline-flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 13%;
+    margin-left: -4px;
+    margin-right: -8px;
+    background-color: rgb(202, 125, 23);
 }
 .navbar li.button-background {
     background-color: lightblue;
 }
-.navbar li button {
-    float: right;
-}
-svg {
-    height: 24px;
-    width: 24px;
-    top: 5px;
-}
+
 
 /* --------------------------------------------------*/
 /*-----------Liste d'article correspodnant-----------*/
