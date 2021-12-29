@@ -14,9 +14,25 @@ body {
 nav.navbar {
     width: 80%;
     margin: 0 auto;
+<<<<<<< HEAD
     background-color: darkblue;
     position: sticky;
     top: 0x;
+=======
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: darkblue;
+}
+.navbar ul {
+    list-style-type: none;  
+    flex: 1 1 auto;
+}
+.navbar ul li{
+    float: left;
+    width: 15%;
+    text-align: center;
+>>>>>>> fa868a00dddc545900db19542f916aae0d6525b7
 }
 nav.navbar ul {
     list-style-type: none;  
@@ -34,7 +50,12 @@ nav.navbar a {
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
+<<<<<<< HEAD
 nav.navbar a:hover{
+=======
+.navbar a:hover{
+    color: black;
+>>>>>>> fa868a00dddc545900db19542f916aae0d6525b7
     background-color: rgb(103, 162, 180);
 }
 nav.navbar .sous-menu {
