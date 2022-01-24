@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="style_composant.css">
     
-    <title>Vous recherchez :</title>
+    <title>Vous recherchez : écran PC</title>
 </head>
 <body>
+    <header>
+        <div class = "barrenav">       
             <nav class = "navbar">
                 <ul>
                     <li class="menu"><a href ="#">Composants</a>
@@ -16,9 +18,7 @@
                             <li><a href="#">Processeurs</a></li>
                             <li><a href="#">Carte Graphique</a></li>
                             <li><a href="#">Alimentation</a></li>
-                            <li><a href="#">Carte mère</a></li>
-        
-        
+                            <li><a href="#">Carte mère</a></li>        
                         </ul>
                     </li>
                     <li class="menu"><a href = "#">Objets</a>
@@ -33,7 +33,7 @@
         
                     <li class="menu"><a href = "#">Périphérique</a>
                         <ul class = "sous-menu">
-                            <li><a href="#">Claviers</a></li>
+                            <li></span><a href="#">Claviers</a></li>
                             <li><a href="#">Souris</a></li>
                             <li><a href="#">Imprimantes</a></li>
                             <li><a href="#">Casques</a></li>
@@ -43,28 +43,37 @@
                     </li>
                     <li class = "menu"><a href= "#">A propos</a></li>
 
-                    <li class = "search">
-                        <input type = "search" class = "search-bar" placeholder="Recherchez vos produits">
-                        <input type = "button" value = "Search" class = "search-button">
+                    <li class = "menu"><a href = "#">Description</a></li>
+                    <li>
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" placeholder = "Rechercher un produit" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </nav>
+        </div>
+    </header>
 
-            <h1>Les résultats pour Ecran PC</h1>
+        <h1>Les résultats pour Ecran PC</h1>
 
-            <article class = "prod-recherche">
-                <ul>
-                    <li>
-                        <img src ="ecran_1.jpg">
-                        <a>Ecran a vendre pas cher</a>
-                    </li>
-                    <li>
-                        <img src = "ordi_port_1.png">
-                        <a>Ordinateur portable</a>
-                    </li>
+        <article class = "prod-recherche">
+            <ul>
+                <li>
+                    <img src ="ecran_4.png">
+                    <a>Ecran a vendre pas cher</a>
+                    <span class = "prix"> 185.99€</span>
+                </li>
+                <li>
+                    <img src = "ordi_port_1.png">
+                    <a>Ordinateur portable</a>
+                    <span class = "prix">700€</span>
+                </li>
 
-                </ul>
-            </article>
+            </ul>
+        </article>
 
     
 </body>

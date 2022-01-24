@@ -5,41 +5,28 @@
     box-sizing: border-box;
 }
 body {
-    background-color: lightblue;
+    background-color: black;
 }
-
 /* --------------------------------------------------*/
 /*-----------Barre de navigation d'onglet------------*/
 /*---------------------------------------------------*/
+div.barrenav {
+    background-color: rgb(0, 0, 0);
+}
 nav.navbar {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-<<<<<<< HEAD
-    background-color: darkblue;
     position: sticky;
-    top: 0x;
-=======
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    background-color: darkblue;
-}
-.navbar ul {
-    list-style-type: none;  
-    flex: 1 1 auto;
-}
-.navbar ul li{
-    float: left;
-    width: 15%;
-    text-align: center;
->>>>>>> fa868a00dddc545900db19542f916aae0d6525b7
+    background-color: rgba(12, 12, 12);
+    border-bottom: 2px solid rgb(10, 194, 25);
 }
 nav.navbar ul {
     list-style-type: none;  
     display: flex;
 }
-nav.navbar ul li{
+nav.navbar ul li.menu{
     flex: 1 1 auto;
+    border-top: none;
     text-align: center;
     position: relative;
 }
@@ -47,21 +34,18 @@ nav.navbar a {
     display: block;
     text-decoration: none;
     color: white;
-    border-bottom: 2px solid transparent;
+    font-weight: bold;
+    border-bottom: 1px thin transparent;
     padding: 10px 0px;
 }
-<<<<<<< HEAD
-nav.navbar a:hover{
-=======
 .navbar a:hover{
     color: black;
->>>>>>> fa868a00dddc545900db19542f916aae0d6525b7
-    background-color: rgb(103, 162, 180);
+    background-color: rgb(10, 194, 25);
 }
-nav.navbar .sous-menu {
+nav.navbar ul.sous-menu {
     display: none;
     box-shadow: 0px 1px 2px rgb(0, 0, 0);
-    background-color: darkblue;
+    background-color: rgb(121, 211, 118);
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -72,7 +56,7 @@ nav.navbar > ul li:hover .sous-menu {
 }
 .sous-menu li{
     flex: 1 1 auto;
-    text-align: left;
+    text-align: center;
 }
 .sous-menu a{
     padding: 10px;
@@ -80,33 +64,137 @@ nav.navbar > ul li:hover .sous-menu {
 }
 .sous-menu a:hover{
     border-bottom: none;
-    background-color: lightblue;
+    background-color: rgb(10, 194, 25) ;
 }
-.navbar li .search-bar{
-    display: inline-flex;
-    justify-items: flex-start;
-    border: none;
-    height: 100%;
-    width: 85%;
+.search-bar{
+    display: flex;
 }
-.search-button {
-    display: inline-flex;
-    justify-content: flex-start;
-    height: 100%;
-    width: 13%;
-    margin-left: -4px;
-    margin-right: -8px;
-    background-color: rgb(202, 125, 23);
+.search-bar input,
+.search-btn, 
+.search-btn:before, 
+.search-btn:after {
+	transition: all 0.25s ease-out;
 }
-.navbar li.button-background {
-    background-color: lightblue;
+.search-bar input,
+.search-btn {
+	width: 3em;
+	height: 3em;
+}
+.search-bar input:invalid:not(:focus),
+.search-btn {
+	cursor: pointer;
+}
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid  {
+	width: 100%;
+}
+.search-bar input:focus,
+.search-bar input:not(:focus) + .search-btn:focus {
+	outline: transparent;
+}
+.search-bar {
+	margin: auto;
+	padding: 0;
+	justify-content: center;
+	max-width: 30em;
+}
+.search-bar input {
+	background: transparent;
+	border-radius: 1.5em;
+	box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+	padding: 0.75em;
+	transform: translate(0.5em,0.5em) scale(0.5);
+	transform-origin: 100% 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.search-bar input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+	background: #fff;
+	border-radius: 0.375em 0 0 0.375em;
+	box-shadow: 0 0 0 0.1em #3d3d3d inset;
+	transform: scale(1);
+}
+.search-btn {
+	background: #f1f1f1;
+	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+	padding: 0.75em;
+	position: relative;
+	transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+	transform-origin: 0 50%;
+}
+.search-btn:before, 
+.search-btn:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	position: absolute;
+}
+.search-btn:before {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+	top: 0.75em;
+	left: 0.5em;
+	width: 1.2em;
+	height: 1.2em;
+}
+.search-btn:after {
+	background: #f1f1f1;
+	border-radius: 0 0.25em 0.25em 0;
+    top: 61%;
+    left: 45%;
+	width: 0.75em;
+	height: 0.25em;
+	transform: translate(0.2em,0) rotate(45deg);
+	transform-origin: 0 50%;
+}
+.search-btn span {
+	display: inline-block;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
 }
 
+/* Active state */
+.search-bar input:focus + .search-btn,
+.search-bar input:valid + .search-btn {
+	background: rgb(30, 223, 4);
+	border-radius: 0 0.375em 0.375em 0;
+	transform: scale(1);
+}
+.search-bar input:focus + .search-btn:before, 
+.search-bar input:focus + .search-btn:after,
+.search-bar input:valid + .search-btn:before, 
+.search-bar input:valid + .search-btn:after {
+	opacity: 1;
+}
+.search-bar input:focus + .search-btn:hover,
+.search-bar input:valid + .search-btn:hover,
+.search-bar input:valid:not(:focus) + .search-btn:focus {
+	background: #24db0c;
+}
+.search-bar input:focus + .search-btn:active,
+.search-bar input:valid + .search-btn:active {
+	transform: translateY(1px);
+}
 
 /* --------------------------------------------------*/
 /*-----------Liste d'article correspodnant-----------*/
 /*---------------------------------------------------*/
+article.prod-recherche {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: lightblue;
 
+}
 h1{
     text-align: center;
     margin-top: 9px;
@@ -114,14 +202,13 @@ h1{
 }
 article.prod-recherche ul {
     list-style-type: none;
-    margin-top: 10%;
 }
 article.prod-recherche ul li {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
     border: solid;
-    padding: 5em;
+    padding: 1em;
     border-bottom: none;
 }
 article.prod-recherche ul li:last-child{
@@ -130,6 +217,10 @@ article.prod-recherche ul li:last-child{
 article.prod-recherche ul li img {
     width: 10%;
     height: 10%;
+}
+article.prod-recherche ul li span.prix {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /*--------------------------------------------------*/
