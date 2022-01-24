@@ -83,24 +83,32 @@ svg {
 /* première section */
 
 article *{
-    background-color: yellow;
+    display:flex;
+    flex-direction: column;
 }
 
 .titr_nouv {
+    margin-top: 10%;
     text-align: left;
     padding-left: 10%;
     padding-right: 10%;
+    font-size: x-large;
 }
 .nouveaute {
+    background-color: darkblue;
     list-style-type: none;
-    display:block;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top: 1%;
     padding-left: 10%;
     padding-right: 10%;
 }
 .items{
-    height: 200px;
+    background-color: yellowgreen;
+    height: 50%;
     border:solid;
-    float: left;
     width: 20%;
 }
 .img_items{
