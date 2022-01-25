@@ -186,31 +186,40 @@ nav.navbar > ul li:hover .sous-menu {
 /*-----------Liste d'article correspondant-----------*/
 /*---------------------------------------------------*/
 
-.search-list{
-    width: 20%;
+div.search-list{
+    width: 80%;
     margin: 0 auto;
-    position: relative;
     top: 0px;
-    margin-left: 14.2em;
+    margin-top: 10%;
+    margin-left: 10em;
     background-color: black;
 }
 
 .search-list ul{
+    border-bottom: 1px solid gray;
     list-style-type: none;
     display: flex;
 }
 
 .search-list ul li{
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     text-align: center;
-    position: relative;
-    border-bottom: solid rgb(30, 223, 4);
+}
+.search-list ul li:nth-child(2) {
+    margin-left: 5%;
+}
+.search-list ul li :hover {
+    color: white;
+}
+.search-list ul li :focus {
+    color: white;
+    border-bottom: 2px solid rgb(30, 223, 4);
 }
 
 .search-list ul li a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: rgb(167, 162, 162);
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
@@ -230,7 +239,7 @@ article.prod-recherche ul.article-list li {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    border: solid white;
+    /*border: solid white;*/
     padding: 1em;
     border-bottom: none;
 }
