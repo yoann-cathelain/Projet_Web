@@ -17,7 +17,7 @@ nav.navbar {
     width: 100%;
     margin: 0 auto;
     position: sticky;
-    background-color: rgba(12, 12, 12);
+    background-color: rgb(17, 17, 17);
     border-bottom: 2px solid rgb(10, 194, 25);
 }
 nav.navbar ul {
@@ -106,12 +106,6 @@ nav.navbar > ul li:hover .sous-menu {
 	padding: 0.75em;
 	transform: translate(0.5em,0.5em) scale(0.5);
 	transform-origin: 100% 0;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-.search-bar input::-webkit-search-decoration {
-	-webkit-appearance: none;
 }
 .search-bar input:focus,
 .search-bar input:valid {
@@ -183,42 +177,75 @@ nav.navbar > ul li:hover .sous-menu {
 	transform: translateY(1px);
 }
 
+.logo-panier {
+    width: 2.5em;
+    height: 2.5em;
+}
+
 /* --------------------------------------------------*/
-/*-----------Liste d'article correspodnant-----------*/
+/*-----------Liste d'article correspondant-----------*/
 /*---------------------------------------------------*/
+
+.search-list{
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    margin-left: 14.2em;
+    background-color: black;
+}
+
+.search-list ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.search-list ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+    border-bottom: solid rgb(30, 223, 4);
+}
+
+.search-list ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
 article.prod-recherche {
     display: flex;
+    flex-direction: column;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    background-color: lightblue;
-
+    background-color: black;
 }
-h1{
-    text-align: center;
-    margin-top: 9px;
-    color: tomato;
-}
-article.prod-recherche ul {
+article.prod-recherche ul.article-list {
     list-style-type: none;
 }
-article.prod-recherche ul li {
+article.prod-recherche ul.article-list li {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    border: solid;
+    border: solid white;
     padding: 1em;
     border-bottom: none;
 }
-article.prod-recherche ul li:last-child{
-    border-bottom: solid black;
+article.prod-recherche ul.article-list li a {
+    color: white;
 }
-article.prod-recherche ul li img {
+article.prod-recherche ul.article-list li:last-child{
+    border-bottom: solid white;
+}
+article.prod-recherche ul.article-list li img {
     width: 10%;
     height: 10%;
 }
-article.prod-recherche ul li span.prix {
+article.prod-recherche ul.article-list li span.prix {
+    color: white;
     font-size: 20px;
     font-weight: bold;
 }
