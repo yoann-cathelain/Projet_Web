@@ -5,104 +5,207 @@
     box-sizing: border-box  ;
 }
 body{
-    background-color:lightblue;
+    background-color:black  ;
 }
 
 img{
-    max-width:100%
+    max-width:100%;
+    height: auto;
 }
 
-/* barre du haut*/
+/* --------------------------------------------------*/
+/*-----------Barre de navigation d'onglet------------*/
+/*---------------------------------------------------*/
 
-.navbar {
-    background-color: darkblue;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    padding-left: 10%;
+div.barrenav {
+    background-color: rgb(0, 0, 0);
+}
+nav.navbar {
+    width: 100%;
     margin: 0 auto;
     position: sticky;
+    background-color: rgb(17, 17, 17);
+    border-bottom: 2px solid rgb(10, 194, 25);
 }
-.navbar ul {
-    list-style-type: none;
+nav.navbar ul {
+    list-style-type: none;  
+    display: flex;
+}
+nav.navbar ul li.menu{
     flex: 1 1 auto;
-}
-.navbar ul li{
-    float: left;
-    width: 15%;
+    border-top: none;
     text-align: center;
+    position: relative;
 }
-nav ul::after{
-    content:"";
-    display: table;
-    clear: both;
-}
-.navbar a {
+nav.navbar a {
     display: block;
     text-decoration: none;
     color: white;
-    border-bottom: 2px solid transparent;
+    font-weight: bold;
+    border-bottom: 1px thin transparent;
     padding: 10px 0px;
 }
 .navbar a:hover{
     color: black;
-    background-color: lightblue;
+    background-color: rgb(10, 194, 25);
 }
-.sous-menu {
+nav.navbar ul.sous-menu {
     display: none;
-    background-color: darkblue;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0);
+    background-color: rgb(121, 211, 118);
     position: absolute;
     width: 100%;
+    z-index: 1000;
 }
-.navbar > ul li:hover .sous-menu {
-    display: block;
+nav.navbar > ul li:hover .sous-menu {
+    display: flex;
+    flex-flow: column wrap;
 }
-.navbar .sous-menu li{
-    float: none;
-    width: 100%;
+.sous-menu li{
+    flex: 1 1 auto;
+    text-align: center;
 }
-.menu {
-    background-color: darkblue;
-    color: white;
-    position: relative;
+.sous-menu a{
+    padding: 10px;
+    border-bottom: none;
 }
-.menu:hover{
-    background-color: darkblue; 
+.sous-menu a:hover{
+    border-bottom: none;
+    background-color: rgb(10, 194, 25) ;
 }
-.navbar input[type="search"]{
-    float: none;
-    height: 30px;
-    width: 80%;
+.search-bar{
+    display: flex;
 }
-.navbar li button {
-    float: none;
-    height: 30px;
+.search-bar input,
+.search-btn, 
+.search-btn:before, 
+.search-btn:after {
+	transition: all 0.25s ease-out;
 }
-svg {
-    height: 24px;
-    width: 24px;
-    top: 5px;
-}   
+.search-bar input,
+.search-btn {
+	width: 3em;
+	height: 3em;
+}
+.search-bar input:invalid:not(:focus),
+.search-btn {
+	cursor: pointer;
+}
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid  {
+	width: 100%;
+}
+.search-bar input:focus,
+.search-bar input:not(:focus) + .search-btn:focus {
+	outline: transparent;
+}
+.search-bar {
+	margin: auto;
+	padding: 0;
+	justify-content: center;
+	max-width: 30em;
+}
+.search-bar input {
+	background: transparent;
+	border-radius: 1.5em;
+	box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+	padding: 0.75em;
+	transform: translate(0.5em,0.5em) scale(0.5);
+	transform-origin: 100% 0;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+	background: #fff;
+	border-radius: 0.375em 0 0 0.375em;
+	box-shadow: 0 0 0 0.1em #3d3d3d inset;
+	transform: scale(1);
+}
+.search-btn {
+	background: #f1f1f1;
+	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+	padding: 0.75em;
+	position: relative;
+	transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+	transform-origin: 0 50%;
+}
+.search-btn:before, 
+.search-btn:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	position: absolute;
+}
+.search-btn:before {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+	top: 0.75em;
+	left: 0.5em;
+	width: 1.2em;
+	height: 1.2em;
+}
+.search-btn:after {
+	background: #f1f1f1;
+	border-radius: 0 0.25em 0.25em 0;
+    top: 61%;
+    left: 45%;
+	width: 0.75em;
+	height: 0.25em;
+	transform: translate(0.2em,0) rotate(45deg);
+	transform-origin: 0 50%;
+}
+.search-btn span {
+	display: inline-block;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+}
+
+/* Active state */
+.search-bar input:focus + .search-btn,
+.search-bar input:valid + .search-btn {
+	background: rgb(30, 223, 4);
+	border-radius: 0 0.375em 0.375em 0;
+	transform: scale(1);
+}
+.search-bar input:focus + .search-btn:before, 
+.search-bar input:focus + .search-btn:after,
+.search-bar input:valid + .search-btn:before, 
+.search-bar input:valid + .search-btn:after {
+	opacity: 1;
+}
+.search-bar input:focus + .search-btn:hover,
+.search-bar input:valid + .search-btn:hover,
+.search-bar input:valid:not(:focus) + .search-btn:focus {
+	background: #24db0c;
+}
+.search-bar input:focus + .search-btn:active,
+.search-bar input:valid + .search-btn:active {
+	transform: translateY(1px);
+}
+
+.logo-panier {
+    width: 2.5em;
+    height: 2.5em;
+}
 
 /* diapo en haut du site */
 
-
 .slideshow{
-    border: 5px solid white;
-    box-shadow: 0 0 5px hsla(0,0%,0%,.5);
     overflow: hidden;
-    max-width: 600px;
-    margin: 2rem auto;
+    max-width: 90%;
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: relative
 }
     
 .slideshow ul{
     padding-bottom: 66.67%;/* ratio pour le responsive */
     margin: 0;
-    list-style-type: none;
-    position: relative
+    position: relative;
 }
-    
     
 .slideshow li{
     top: 0;
@@ -110,6 +213,8 @@ svg {
     animation: slideshow 25s ease infinite;
     position: absolute;
     opacity: 0;
+    object-fit: contain;
+    
 }
 
 .slideshow li:nth-child(2){
@@ -137,6 +242,8 @@ svg {
 } 
 
 /* première section */
+
+/*
 
 article *{
     display:flex;
@@ -176,6 +283,33 @@ article *{
 }
 .prix{
     text-align: right;
+}
+*/
+
+/* Main part */
+
+.produits {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 10%;   
+}
+
+.produits li{
+    flex-basis:50%;
+}
+
+.produits li a{
+    justify-content: center;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: green;
+    border:solid;
 }
 
 /* barre du bas */
