@@ -19,9 +19,10 @@ img{
 
 div.barrenav {
     background-color: rgb(0, 0, 0);
+    z-index: 10;
 }
 nav.navbar {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     position: sticky;
     background-color: rgb(17, 17, 17);
@@ -198,7 +199,8 @@ nav.navbar > ul li:hover .sous-menu {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    position: relative
+    position: relative;
+    z-index: -1;
 }
     
 .slideshow ul{
@@ -214,7 +216,6 @@ nav.navbar > ul li:hover .sous-menu {
     position: absolute;
     opacity: 0;
     object-fit: contain;
-    
 }
 
 .slideshow li:nth-child(2){
@@ -299,7 +300,14 @@ article *{
     flex-basis:50%;
 }
 
+.produits input {
+    color:green;
+    border-color: green;
+    background-color: black;
+}
+
 .produits li a{
+    display: flex;
     justify-content: center;
 }
 
