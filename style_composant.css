@@ -179,7 +179,7 @@ nav.navbar > ul li:hover .sous-menu {
 
 .logo-panier {
     width: 2.5em;
-    height: 2.5em;
+    height: 2.3em;
 }
 
 /* --------------------------------------------------*/
@@ -191,7 +191,7 @@ div.search-list{
     margin: 0 auto;
     top: 0px;
     margin-top: 10%;
-    margin-left: 14.5em;
+    margin-left: 12em;
     background-color: black;
 }
 
@@ -218,6 +218,7 @@ div.search-list{
 
 .search-list ul li a{
     display: block;
+    font-size: 1.5em;
     text-decoration: none;
     color: rgb(167, 162, 162);
     border-bottom: 2px solid transparent;
@@ -237,7 +238,7 @@ article.prod-recherche {
     width: auto;
     background-color: black;
 }
-.prod-recherche ul.article-list li {
+.prod-recherche ul.article-list li.product {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -247,11 +248,60 @@ article.prod-recherche {
 }
 .description {
     width: 50%;
-}
-.prod-recherche ul.article-list li .description h3 {
-    color: rgb(0, 0, 0);
     margin-left: 5%;
+}
+.prod-recherche ul.article-list li .description h3.new {
+    color: black;
+    width: 5em;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: rgb(30, 223, 4);
 
+}
+.prod-recherche ul.article-list li .description h3.exclusif {
+    color: black;
+    width: 5em;
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(214, 20, 101);
+}
+.prod-recherche ul.article-list li .description a.titre {
+    display: block;
+    text-decoration: none;
+    font-size: small;
+    color: white;
+    margin-top: 2%;
+}
+.prod-recherche ul.article-list li .description a.titre:hover{
+    text-decoration: underline;
+}
+.prod-recherche ul.article-list li .description .text-grey {
+    color: grey;
+    margin-top: 1%;
+}
+.description .mini-list {
+    list-style-type: disc;
+    display: block;
+    color: grey;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.description .information-article{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(21, 160, 3);
+    margin-top: 2%;
+}
+.description .information-article:hover{
+    text-decoration: underline;
+}
+.description .information-article::after{
+    content: " >";
+    display: inline-block;
+    font-size: small;
+    padding-left: 0.1875rem;
+    position: relative;
 }
 .prod-recherche ul.article-list li img {
     width: 35%;
@@ -262,10 +312,12 @@ article.prod-recherche {
     box-shadow: 8px 8px 12 px gray;
 }
 .prod-recherche ul.article-list li span.prix {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    display: block;
+    color: white;
+    font-size: 15px;
     font-weight: bold;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 5%;
 }
 
 /*--------------------------------------------------*/

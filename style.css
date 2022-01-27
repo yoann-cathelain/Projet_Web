@@ -319,7 +319,7 @@ article *{
 .navzone{
     display: flex;
     width: 100%;
-    background-color: darkcyan;
+    background-color:rgb(17, 17, 17) ;
     margin-top: 5%;
 }
 
@@ -343,5 +343,5 @@ article *{
 
 .info a{
     font-size: small;
-    color:lightcyan;   
+    color:white;   
 }
