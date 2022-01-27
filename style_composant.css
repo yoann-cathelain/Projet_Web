@@ -232,31 +232,40 @@ article.prod-recherche {
     justify-content: center;
     background-color: black;
 }
-article.prod-recherche ul.article-list {
+.prod-recherche ul.article-list {
     list-style-type: none;
     width: auto;
-    background-color: white;
+    background-color: black;
 }
-article.prod-recherche ul.article-list li {
+.prod-recherche ul.article-list li {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
     height: 15em;
     padding: 1em;
-    border: solid black;
 }
-article.prod-recherche ul.article-list li a {
+.description {
+    width: 50%;
+}
+.prod-recherche ul.article-list li .description h3 {
     color: rgb(0, 0, 0);
+    margin-left: 5%;
+
 }
-article.prod-recherche ul.article-list li img {
-    width: 30%;
+.prod-recherche ul.article-list li img {
+    width: 35%;
     height: auto;
-    background-color: red;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: rgb(24, 23, 23);
+    box-shadow: 8px 8px 12 px gray;
 }
-article.prod-recherche ul.article-list li span.prix {
+.prod-recherche ul.article-list li span.prix {
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
+    align-items: center;
 }
 
 /*--------------------------------------------------*/
