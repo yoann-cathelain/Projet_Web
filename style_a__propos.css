@@ -244,35 +244,7 @@ nav.navbar > ul li:hover .sous-menu {
 
 /* Main part */
 
-.produits {
-    list-style: none;
-    display:flex;
-    flex-wrap: wrap;
-    padding: 0 10%;   
-}
 
-.produits li{
-    flex-basis:50%;
-    border: thick double rgb(28, 196, 173);
-    position:relative;
-}
-
-.produits input {
-    color: yellow;
-    border-color: yellow;
-    background-color: transparent;
-    width : auto;
-    font-size: x-large;
-    justify-self: center;
-    position: absolute;
-    top: 50%
-}
-
-.produits li form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* barre du bas */
 
