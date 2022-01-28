@@ -324,27 +324,43 @@ article.prod-recherche {
 /*-----------------Bas de page----------------------*/
 /*--------------------------------------------------*/
 
-.navzone         {
+.navzone{
+    display: flex;
     width: 100%;
-    background-color: darkcyan;
-    margin-top: 100%;
-    line-height: 50%;
+    background-color:rgb(17, 17, 17) ;
+    margin-top: 5%;
 }
+
+.navzone ul{
+    list-style-type: none;
+}
+
+.navzone > ul{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .navzone a{
-    display: block;
+    display: flex;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
-.navzone ul{
-    list-style-type: none;
-}
-.info{
-    width:25%;
-    float:left;
-    text-align:center;
-}
-.info a{
+
+.info .bot a{
     font-size: small;
-    color:lightcyan;   
+    color:rgb(151, 144, 144);   
+}
+.info .bot a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.info .bot-title a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(21, 160, 3);
+    text-underline-offset: 0.25em;
 }
