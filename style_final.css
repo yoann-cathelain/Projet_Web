@@ -34,7 +34,7 @@ nav.navbar ul li.menu{
     text-align: center;
     position: relative;
 }
-nav.navbar a {
+nav.navbar .menu a {
     display: block;
     text-decoration: none;
     color: white;
@@ -42,7 +42,7 @@ nav.navbar a {
     border-bottom: 1px thin transparent;
     padding: 10px 0px;
 }
-.navbar a:hover{
+.navbar .menu a:hover{
     color: black;
     background-color: rgb(10, 194, 25);
 }
@@ -184,8 +184,27 @@ nav.navbar > ul li:hover .sous-menu {
 .logo-panier {
     width: 2.5em;
     height: 2.3em;
+    
+}
+.click-panier {
+    width: auto;
+    height: 1px;
 }
 
+/* --------------------------------------------------*/
+/*----------------Affichage menu panier--------------*/
+/*---------------------------------------------------*/
+div.aff-panier {
+    background-color: grey;
+    margin-left: auto;
+    width: 30em;
+    height: 30em;
+    border-radius: 10px;
+}
+.article-pres {
+    width: 10em;
+    height: 5em;
+}
 /* --------------------------------------------------*/
 /*---------Diapositive défilement automatique--------*/
 /*---------------------------------------------------*/
