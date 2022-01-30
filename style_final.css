@@ -73,6 +73,22 @@ nav.navbar > ul li:hover .sous-menu {
 .search-bar{
     display: flex;
 }
+.logo-panier {
+    width: 2.5em;
+    height: 2.3em;
+    
+}
+.click-panier {
+    width: auto;
+    height: 1px;
+}
+.navbar ul.show-panier {
+    display: none;
+}
+.navbar > ul li.shopping-cart a:focus{
+    display: flex;
+    flex-flow: column wrap;
+}
 .search-bar input,
 .search-btn, 
 .search-btn:before, 
@@ -179,16 +195,6 @@ nav.navbar > ul li:hover .sous-menu {
 .search-bar input:focus + .search-btn:active,
 .search-bar input:valid + .search-btn:active {
 	transform: translateY(1px);
-}
-
-.logo-panier {
-    width: 2.5em;
-    height: 2.3em;
-    
-}
-.click-panier {
-    width: auto;
-    height: 1px;
 }
 
 /* --------------------------------------------------*/
@@ -422,6 +428,48 @@ article.prod-recherche {
     align-items: flex-start;
     margin-top: 5%;
 }
+
+/*--------------------------------------------------*/
+/*--------------Page de description-----------------*/
+/*------------------composant-----------------------*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 110em;
+    height: 60em;
+    margin-left: auto;
+    margin-right: auto  ;
+}
+.bande-description {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(17, 17, 17) ;
+}
+.big-image {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+}
+.big-image .img-info-composant {
+    width: auto;
+    height: 40em;
+}
+.defil-img li img{
+    display: block;
+    width: 10%;
+    height: 5%;
+}
+.info-description {
+    background-color: black ;
+    width: 30%;
+    height: 70%
+}
+.info-technique {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(36,36,36);
+}
+
 
 /*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
