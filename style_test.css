@@ -1,109 +1,22 @@
-*{box-sizing:border-box}
-
-img{
-
-max-width: 500px;
-max-height: 500px;
-
-
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
 }
 
-/*pour le saut de page, on cree une class que l'on met en display:none*/
-.target{
-
-display: none
-
+td {
+    text-align: center;
 }
 
-
-/* englobe le slider */
-
-.cadre_diapo{
-
-max-width: 1200px;
-margin: 2em auto;
-overflow: hidden;
-	
-	}
-
-.interieur_diapo{
-	
-display: flex;
-width: auto;
-height: auto;
-transition: transform .6s ease-in-out
-	
-	}
-
-.description{
-
-position: relative;
+tr:nth-child(even) {
+    background-color: #eee;
 }
-.taille-img {
-    width: 500px;
-    width: 500px;
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
 }
-	
-#votre_id1:target ~ .cadre_diapo .interieur_diapo{
 
-transform:translatex(0)
-
-}/*image 1*/
-
-#votre_id2:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-100%)
-
-}/*image 2*/
-
-#votre_id3:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-50%)
-
-}/*image 3*/
-
-#votre_id4:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-75%)
-
-}/*image 4*/
-
-
-
-
-
-/*navigation avec images miniatures*/
-.navigation_diapo{
-	
-display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
-list-style-type: none;
-margin: 0;
-padding: 0;
-	
-	}
-
-.navigation_diapo li {
-	
-	padding: .25em;
-	
-	}
-
-.navigation_diapo img{
-
-border: 3px solid white;
-box-shadow:0 0 5px hsla(0,0%,0%,.4);
-
-	
-	}
-	
-	
-	@media (min-width:31.25rem){
-		
-		.description span{
-			
-			font-size: initial
-		
-		}
-	
-	}
-	
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
