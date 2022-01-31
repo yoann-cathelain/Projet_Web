@@ -1189,6 +1189,39 @@ select::-ms-expand {
 }
 
 /*--------------------------------------------------*/
+/*-----------------Description----------------------*/
+/*--------------------------------------------------*/
+
+.container-explication {
+    width: 40em;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+.img-explication {
+    margin-left: 10%;
+}
+.img-explication img {
+    margin-top: 1%;
+}
+.code-explication {
+    width: 40em;
+    height: 20em;
+}
+.code-explication h3 {
+    text-align: center;
+    color: white;
+}
+.code-explication p {
+    margin-top: 2%;
+    color: white;
+}
+.code-explication strong{
+    color: rgb(30, 223, 4);
+}
+
+/*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
 /*--------------------------------------------------*/
 .navzone{
