@@ -9,19 +9,131 @@
     <title>Votre panier</title>
 </head>
 <body>
-    <div class= "aff-panier">
+    <nav class = "navbar">
         <ul>
-            <li>
-                <img src ="Ressources/CG.png" class ="article-pres" alt = "Votre article">
+            <li class="menu"><a href ="#">Composants</a>
+                <ul class = "sous-menu">
+                    <li><a href="#">Processeurs</a></li>
+                    <li><a href="#">Carte Graphique</a></li>
+                    <li><a href="#">Alimentation</a></li>
+                    <li><a href="#">Carte mère</a></li>        
+                </ul>
             </li>
-            <li>
-                <a class = "option_panier">Commandes</a>
+            <li class="menu"><a href = "#">Objets</a>
+                <ul class = "sous-menu">
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Ordinateurs portables</a></li>
+                    <li><a href="#">Ecrans</a></li>
+                    <li><a href="#">Souris</a></li>
+        
+                </ul>
             </li>
-            <li>
+        
+            <li class="menu"><a href = "#">Périphérique</a>
+                <ul class = "sous-menu">
+                    <li><a href="#">Claviers</a></li>
+                    <li><a href="#">Souris</a></li>
+                    <li><a href="#">Imprimantes</a></li>
+                    <li><a href="#">Casques</a></li>
+                    <li><a href="#">Enceintes</a></li>
+        
+                </ul>
+            </li>
+            <li class = "menu"><a href= "#">A propos</a></li>
 
+            <li class = "menu"><a href = "#">Description</a></li>
+                <li>
+                <form action="" class="search-bar">
+                    <a href ="Page_Composants.html"></a>
+                    <input type="search" name="search" pattern=".*\S.*" placeholder = "Rechercher un produit" required>
+                    <button class="search-btn" type="submit">
+                        <span>Search</span>
+                    </button>
+            </form>
+            </li>
+            <li class = "shopping-cart">
+                <a href ="" class = "click-panier"><img alt= "Logo" src = "Ressources/shopping_cart_items.png" class = " logo-panier"></a>
             </li>
         </ul>
+    </nav>
+    <div class = "container-panier">        
+        <div class = "bandeau">
+            <h4>Panier( 1 articles)</h4>
+            <span class = "payment-price">1399.99 €</span>
+            <form action = "" class = "paiement">
+                <input type ="button" class = "payment" value = "Paiement">
+            </form>
+        </div>
+        <div class = "article-panier">
+            <div class ="prod-recherche">
+            <div class = "search-article">
+                <ul class = "article-list">
+                    <li class = "product">
+                        <img src ="Ressources/CG.png" alt = "Grosse carte graphique qui rox du poney">
+                        <div class = "description">
+                            <h3 class = "new">Nouveau</h3>
+                            <a class = "titre" href ="#">ASUS ROG STRIX GeForce RTX 3070 Ti O8G GAMING</a>
+                            <div class ="text-grey">Carte Graphique PC</div>
+                            <ul class = "mini-list">
+                                <li>8 GO de mémoire</li>
+                                <li>Ray Tracing</li>
+                                <li>Jouer en 1440p</li>
+                            </ul>
+                            <a class = "information-article" href = "#">Afficher les informations</a>
+                            <span class = "prix">1399.99 €</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>  
+            </div>  
+        </div>
+        <div class = "payment-info">
+
+        </div>
     </div>
+    <footer>
+        <nav class = "navzone">
+            <ul>
+                <li class="info">
+                    <ul>
+                        <li class = "bot-title"><a>Company</a></li>
+                        <li class = "bot"><a href = "#">À propos</a></li>
+                        <li class = "bot"><a href = "#">Recrutement</a></li>
+                    </ul>
+                </li>
+                <li class="info">
+                    <ul> 
+                        <li class = "bot-title"><a>Conditions d'utilisateurs</a></li>
+                        <li class = "bot"><a href = "#">Mentions légales</a></li>
+                        <li class = "bot"><a href = "#">Conditions générales de vente</a></li>
+                        <li class = "bot"><a href = "#">Données personnelles</a></li>
+                        <li class = "bot"><a href = "#">Cookies</a></li>
+                    </ul>
+                </li>    
+                <li class="info">
+                    <ul>
+                        <li class = "bot-title"><a>Boutique</a></li>
+                        <li class = "bot"><a href = "#">Modes de livraison</a></li>
+                        <li class = "bot"><a href = "#">Mode de réglement</a></li>
+                        <li class = "bot"><a href = "#">Nos boutiques</a></li>
+                        <li class = "bot"><a href = "#">Les exclusivités</a></li>
+                    </ul>
+                </li>
+                <li class="info">
+                    <ul>
+                        <li class = "bot-title"><a>Support</a></li>
+                        <li class = "bot"><a href = "#">Garanties</a></li>
+                        <li class = "bot"><a href = "#">Demande de remboursement</a></li>
+                        <li class = "bot"><a href = "#">Assistance clientèle</a></li>
+                        <li class = "bot"><a href = "#">Récupération en magasin</a></li>
+                    </ul>
+                </li>
+                <li class = "info">
+                    
+                </li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 </html>
