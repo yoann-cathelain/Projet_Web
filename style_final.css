@@ -1064,6 +1064,99 @@ select::-ms-expand {
 }
 
 /*--------------------------------------------------*/
+/*-------------------A propos-----------------------*/
+/*--------------------------------------------------*/
+.description-projet {
+    width: 100%;
+    height: 50%;
+}
+.description-projet h2 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25px;
+    color:rgb(30, 223, 4) ;
+}
+.description-projet p {
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: 20%;
+    color: white;
+}
+.description-projet strong {
+    color:rgb(10, 194, 25);
+}
+.description-projet ol {
+    margin-top: 1%;
+}
+.description-projet ol li {
+    margin-left: 25%;
+    color: white;
+}
+.fondateur {
+    display: flex;
+    width: 119em;
+    height: 23em;
+    background-color: black;
+    flex-flow: row wrap;
+}
+.yoann {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    height: 100%;
+}
+.nathan {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.yoann-img {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: black;
+}
+.yoann-img img {
+    border-radius: 50%;
+    border: 2px solid #24db0c;
+}
+.yoann .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    width: 70%;
+    height: 100%;
+}
+.yoann .presentation h2 {
+    color: #24db0c;
+}
+.nathan-img {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: black;
+}
+.nathan-img img {
+    border-radius: 50%;
+    border: 2px solid #24db0c;
+}
+.nathan .presentation {
+    display: flex;
+    margin-left: 2%;
+    width: 70%;
+    align-items: center;
+    height: 100%;
+}
+.nathan .presentation h2 {
+    color: #24db0c;
+}
+
+/*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
 /*--------------------------------------------------*/
 .navzone{
