@@ -100,51 +100,28 @@
             </form>
             </li>
             <li class = "shopping-cart">
-                <a href ="" class = "click-panier"><img alt= "Logo" src = "Ressources/shopping_cart_items.png" class = " logo-panier"></a>
+                <a href ="" class = "click-panier"><img alt= "Logo" src = "Ressources/shopping_cart.png" class = " logo-panier"></a>
             </li>
         </ul>
     </nav>
     <div class = "container-panier">        
         <div class = "bandeau">
-            <h4>Panier( 1 articles)</h4>
-            <span class = "payment-price">1399.99 €</span>
+            <h4>Panier( 0 articles)</h4>
+            <span class = "payment-price">0 €</span>
             <form action = "Page_d'accueil.html" class = "paiement">
                 <input type ="submit"value ="Paiement" class = "payment">
             </form>
         </div>
-        <div class = "article-panier">
-            <div class = "sell-img">
-                <img src ="Ressources/CG.png" alt = "Grosse carte graphique qui rox du poney">
-            </div>
-            <div class = "info-sell">
-                <a class = "titre-panier" href ="#">ASUS ROG STRIX GeForce RTX 3070 Ti O8G GAMING</a>
-                <ul class = "list-panier">
-                    <li>8 GO de mémoire</li>
-                    <li>Ray Tracing</li>
-                    <li>Jouer en 1440p</li>
-                </ul>
-            </div>
-            <div class = "selectdiv">
-                <div class="select-panel">
-                    <label>
-                        <select>
-                            <option selected>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                    </label>
-                    <a href = "#" class = "panier-vide">Supprimer</a>
-                </div>
-                <span class = "prix-panier-atm"> 1399.99 €</span>
-                
-            </div>
-            <form action = "Page_Composants.html">
-                <input type ="submit"value ="Ajouter" class = "add-items">
-            </form>
+        <div class = "img-panier-vide">
+            <img src ="Ressources/Coffre_vide.png" alt="" class ="coffre-vide">
         </div>
-        <div class = "payment-info">
-
+        <div class = "text-panier-vide">
+            <span class = "text-coffre-vide">Un coffre bien vide que voici....</span>
+        </div>
+        <div class = "add-article">
+            <form action = "Page_Composants.html">
+                <input type ="submit"value ="Ajouter" class = "add-items-panier-vide">
+            </form>
         </div>
     </div>
     <footer>
