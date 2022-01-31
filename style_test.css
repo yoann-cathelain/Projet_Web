@@ -1,22 +1,23 @@
-td,
-th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 10px;
+.div1 {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    width: 100em;
+    height: 30em;
+    background-color: orange;
 }
 
-td {
-    text-align: center;
+.div1-2 {
+    width: 40%;
+    height: 50%;
+    background-color: rosybrown;
 }
-
-tr:nth-child(even) {
-    background-color: #eee;
+.div1-3 {
+    width: 40%;
+    height: 50%;
+    background-color: saddlebrown;
 }
-
-th[scope="col"] {
-    background-color: #696969;
-    color: #fff;
-}
-
-th[scope="row"] {
-    background-color: #d7d9f2;
+.div1-4{
+    width: 80%;
+    height: 50%;
+    background-color: seagreen;
 }
