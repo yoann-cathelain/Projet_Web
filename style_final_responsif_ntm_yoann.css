@@ -1041,6 +1041,27 @@ select::-ms-expand {
     border-radius: 5px;
 }
 
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .img-panier-vide{
+        height: auto;
+    }
+    .text-panier-vide span{
+        font-size: 20px;
+    }
+    .add-items-panier-vide{
+        margin-left: 0;
+        position: relative;
+        margin-top: 10%;
+        width: 15em;
+    }
+    .add-article{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
 /*--------------------------------------------------*/

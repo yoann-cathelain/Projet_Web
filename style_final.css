@@ -944,6 +944,62 @@ select::-ms-expand {
     border-radius: 5px;
 }
 
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .container-panier{
+        margin-top: 4em;
+    }
+    .bandeau {
+        flex-direction: column;
+    }
+    .bandeau h4{
+        align-self: auto;
+    }
+    .bandeau .payment-price{
+        margin-left: 5%;
+        align-self: auto;
+    }
+    .bandeau .payment{
+        margin-left: 35%;
+    }
+    .sell-img{
+        width: 100%;
+    }
+    .sell-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .info-sell{
+        width: 100%;
+        height: auto;
+    }
+    .info-sell .list-panier {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .selectdiv{
+        width: 100%;
+        height: auto;
+    }
+    .select-panel{
+        margin: 0 auto;
+    }
+    .prix-panier-atm{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .add-items{
+        margin-left: 50%;
+        position: relative;
+        margin-top: 10%;
+    }
+}
+
 /*--------------------------------------------------*/
 /*------------------Panier vide---------------------*/
 /*--------------------------------------------------*/
@@ -984,6 +1040,27 @@ select::-ms-expand {
     color: rgb(30, 223, 4);
     border: 1px solid rgb(30, 223, 4);
     border-radius: 5px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .img-panier-vide{
+        height: auto;
+    }
+    .text-panier-vide span{
+        font-size: 20px;
+    }
+    .add-items-panier-vide{
+        margin-left: 0;
+        position: relative;
+        margin-top: 10%;
+        width: 15em;
+    }
+    .add-article{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*--------------------------------------------------*/
