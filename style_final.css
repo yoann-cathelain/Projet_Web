@@ -1,3 +1,4 @@
+/*https://www.youtube.com/watch?v=dQw4w9WgXcQ*/
 /* --------------------------------------------------*/
 /*---------------------Style root--------------------*/
 /*---------------------------------------------------*/
@@ -791,7 +792,7 @@ td {
 .container-panier {
     display: flex;
     flex-flow: column wrap;
-    width: 110em;
+    width: 100%;
     height: 44em;
 }
 .text-panier {
@@ -1157,12 +1158,16 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 768px) {
+    .description-projet{
+        margin-top: 4em;
+    }
     .fondateur{
         width: 100%;
         height: auto;
         flex-direction: column;
         align-content: center;
         margin-top: 4em;
+        margin-bottom: 4em;
     }
     .yoann {
         width: 100%;
@@ -1193,6 +1198,7 @@ select::-ms-expand {
 /*--------------------------------------------------*/
 
 .container-explication {
+    margin-top: 4em;
     width: 40em;
     height: 100%;
     margin-left: auto;
