@@ -577,7 +577,7 @@ div.search-list{
     align-items: center;
     border: 1px solid gray;
     background-color: rgb(24, 23, 23);
-    box-shadow: 8px 8px 12 px gray;
+    box-shadow: 8px 8px 12px gray;
 }
 .prod-recherche ul.article-list li span.prix {
     display: block;
@@ -791,7 +791,7 @@ td {
 .container-panier {
     display: flex;
     flex-flow: column wrap;
-    width: 110;
+    width: 110em;
     height: 44em;
 }
 .text-panier {
@@ -1154,6 +1154,38 @@ select::-ms-expand {
 }
 .nathan .presentation h2 {
     color: #24db0c;
+}
+
+@media only screen and (max-width: 768px) {
+    .fondateur{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 4em;
+    }
+    .yoann {
+        width: 100%;
+        height: auto;
+        align-content: center;
+    }
+    .yoann-img{
+        width: 70%;
+        height: auto;
+    }
+    .nathan{
+        width: 100%;
+        height: auto;
+        align-content: center;
+        margin-top: 4em;
+    }
+    .nathan-img{
+        width: 70%;
+        height: auto    ;
+    }
+    .fondateur h2{
+        font-size: 20px;
+    }
 }
 
 /*--------------------------------------------------*/

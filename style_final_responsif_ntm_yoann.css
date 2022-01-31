@@ -863,7 +863,7 @@ td {
 select::-ms-expand {
   display: none;
 }
-  
+w
 .select-panel:after {
     content: '<>';
     font: 17px "Consolas", monospace;
@@ -979,7 +979,6 @@ select::-ms-expand {
         height: auto;
         position: relative;
     }
-
     .selectdiv{
         width: 100%;
         height: auto;
