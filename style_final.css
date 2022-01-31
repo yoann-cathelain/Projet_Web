@@ -590,10 +590,24 @@ td {
     margin-left: 5%;
 }
 .article-panier {
+    display: flex;
     width: 100%;
     height: 40%;
     background-color: royalblue;
+    flex-flow: column wrap;
 }
+.sell-img {
+    width: 15%;
+    height: 70%;
+    background: grey;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+.sell-img img{
+    width: 100%;
+    height: 100%;
+}
+
 .payment-info {
     width: 100%;
     height: 50%;
@@ -612,6 +626,7 @@ form.paiement {
     width: 15em;
     height: 30px;
     background-color: rgb(30, 223, 4);
+    border: none;
     border-radius: 5px;
 }
 
