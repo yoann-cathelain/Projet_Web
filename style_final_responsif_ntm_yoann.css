@@ -441,10 +441,6 @@ nav.navbar > ul li:hover .sous-menu {
 
 @media only screen and (max-width: 768px) {
     /* sur téléphone */
-    .produits input {
-      font-size: small;
-    }
-
     .produits li{
         flex-basis: auto;
     }
@@ -762,6 +758,25 @@ td {
     color: grey;
     border-bottom: 1px solid lightgray;
     padding: 20px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin-top: 4em;
+    }
+    .container-image{
+        width: 100%;
+    }
+    .info-description {
+        width: 100%;
+    }
+    .add-cart {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
 }
 
 /*--------------------------------------------------*/
