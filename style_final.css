@@ -10,6 +10,10 @@
 body {
     background-color: black;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* --------------------------------------------------*/
 /*-----------Barre de navigation d'onglet------------*/
@@ -421,6 +425,8 @@ div.search-list{
 /*--------------------------------------------------*/
 /*--------------Page de description-----------------*/
 /*------------------composant-----------------------*/
+/*--------------------------------------------------*/
+
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -530,23 +536,94 @@ div.search-list{
     height: 25%;
     background-color: rgb(36,36,36);
 }
-.info-technique h2 {
+.info-technique h3 {
+    margin-top: 1%;
     margin-left: 5%;
     color: white;
 }
-.carac-tech tr {
+.carac-tech {
+    margin-left: 10%;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background: rgb(36,36,36);
+}
+table {
+    width: 100%;
+}
+th{
+    width: 20%;
     border-bottom: 1px solid lightgray;
+    color: white;
+    padding: 20px;
+}
+td {
+    width: 80%;
+    color: grey;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
 }
 
+/*--------------------------------------------------*/
+/*---------------------Panier-----------------------*/
+/*--------------------------------------------------*/
+
+.container-panier {
+    display: flex;
+    flex-flow: column wrap;
+    width: 110;
+    height: 44em;
+}
+.text-panier {
+    color: white;
+    font-size: 1em;
+}
+.bandeau {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(36,36,36);
+}
+.bandeau h4 {
+    align-self: center;
+    color: white;
+    margin-left: 5%;
+}
+.article-panier {
+    width: 100%;
+    height: 40%;
+    background-color: royalblue;
+}
+.payment-info {
+    width: 100%;
+    height: 50%;
+    background-color: slateblue;
+}
+.payment-price {
+    align-self: center;
+    margin-left: 60%;
+    color: white;
+}
+form.paiement {
+    align-self: center;
+}
+.payment{
+    margin-left: 20%;
+    width: 15em;
+    height: 30px;
+    background-color: rgb(30, 223, 4);
+    border-radius: 5px;
+}
 
 /*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
 /*--------------------------------------------------*/
 .navzone{
     display: flex;
+    flex-direction: column;
+    align-self: flex-end;
     width: 100%;
     background-color:rgb(17, 17, 17) ;
-    margin-top: 5%;
 }
 
 .navzone ul{
