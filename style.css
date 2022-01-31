@@ -253,32 +253,24 @@ nav.navbar > ul li:hover .sous-menu {
 
 .produits li{
     flex-basis:50%;
-    border: thick double rgb(28, 196, 173);
+    border: thick double rgb(14, 163, 14);
     position:relative;
 }
 
-.produits input {
-    color: yellow;
-    border-color: yellow;
-    background-color: transparent;
-    width : auto;
-    font-size: x-large;
-    justify-self: center;
-    position: absolute;
-    top: 50%
-}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .produits input {
-      font-size: x-small;
-    }
-  }
 
-.produits li form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .produits li form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produits li{
+        flex-basis: auto;
+    }
+
 }
 
 /* barre du bas */
