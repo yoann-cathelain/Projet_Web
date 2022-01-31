@@ -91,7 +91,7 @@
 
             <li class = "menu"><a href = "#">Description</a></li>
                 <li>
-                <form action="" class="search-bar">
+                <form action="Page_Composants.html" class="search-bar">
                     <a href ="Page_Composants.html"></a>
                     <input type="search" name="search" pattern=".*\S.*" placeholder = "Rechercher un produit" required>
                     <button class="search-btn" type="submit">
@@ -108,8 +108,8 @@
         <div class = "bandeau">
             <h4>Panier( 1 articles)</h4>
             <span class = "payment-price">1399.99 €</span>
-            <form action = "" class = "paiement">
-                <input type ="button" class = "payment" value = "Paiement">
+            <form action = "Page_d'accueil.html" class = "paiement">
+                <input type ="submit"value ="Paiement" class = "payment">
             </form>
         </div>
         <div class = "article-panier">
@@ -117,8 +117,31 @@
                 <img src ="Ressources/CG.png" alt = "Grosse carte graphique qui rox du poney">
             </div>
             <div class = "info-sell">
-                <a class = "titre" href ="#">ASUS ROG STRIX GeForce RTX 3070 Ti O8G GAMING</a>
+                <a class = "titre-panier" href ="#">ASUS ROG STRIX GeForce RTX 3070 Ti O8G GAMING</a>
+                <ul class = "list-panier">
+                    <li>8 GO de mémoire</li>
+                    <li>Ray Tracing</li>
+                    <li>Jouer en 1440p</li>
+                </ul>
             </div>
+            <div class = "selectdiv">
+                <div class="select-panel">
+                    <label>
+                        <select>
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </label>
+                    <a href = "#" class = "panier-vide">Supprimer</a>
+                </div>
+                <span class = "prix-panier-atm"> 1399.99 €</span>
+                
+            </div>
+            <form action = "Page_Composants.html">
+                <input type ="submit"value ="Ajouter" class = "add-items">
+            </form>
         </div>
         <div class = "payment-info">
 

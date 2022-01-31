@@ -319,7 +319,7 @@ nav.navbar > ul li:hover .sous-menu {
 
  #menu li
  {
-    list-style-type: none;   
+   list-style-type: none;   
    padding: 10px 0;
    font-size: 22px;
    z-index: 3;
@@ -419,7 +419,7 @@ nav.navbar > ul li:hover .sous-menu {
 
 .produits li{
     flex-basis:50%;
-    border: thick double rgb(28, 196, 173);
+    border: thick double rgb(10, 194, 25);
     position:relative;
 }
 
@@ -451,7 +451,7 @@ nav.navbar > ul li:hover .sous-menu {
 }
 
 /* --------------------------------------------------*/
-/*-----------Liste d'article correspondant-----------*/
+/*-------------------Liste de produit----------------*/
 /*---------------------------------------------------*/
 div.search-list{
     width: 80%;
@@ -759,25 +759,110 @@ td {
     display: flex;
     width: 100%;
     height: 40%;
-    background-color: royalblue;
-    flex-flow: column wrap;
+    background-color: black;
+    flex-flow: row wrap;
 }
 .sell-img {
-    width: 15%;
-    height: 70%;
-    background: grey;
-    margin-top: 2%;
-    margin-left: 25%;
+    display: flex;
+    width: 20%;
+    height: 80%;
+    justify-content: flex-end;
+    background: black;
 }
 .sell-img img{
-    width: 100%;
-    height: 100%;
-}
+    margin-top: 5%;
+    width: 50%;
+    height: 60%;
 
+}
+.info-sell {
+
+    background-color: black;
+    width: 25%;
+    height: 50%;
+}
+.info-sell .titre-panier {
+    display: block;
+    margin-top: 2%;
+    text-decoration: none;
+    color: white;
+}
+.info-sell .list-panier {
+    margin-left: 5%;
+    margin-top: 1%;
+    list-style-type: disc;
+    color: grey;
+    font-size: 15px;
+}
+.info-sell .list-panier li {
+    margin-top: 2px
+}
+.selectdiv {
+    width: 55%;
+    height: 50%;
+    background-color: black;
+}
+.select-panel {
+    position: relative;
+    margin-top: 0;
+    margin-right: 65%;
+  }
+select::-ms-expand {
+  display: none;
+}
+  
+.select-panel:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: rgb(30, 223, 4);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    
+    top: 15px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid rgb(30, 223, 4);
+    
+    position: absolute;
+    pointer-events: none;
+}
+  
+.select-panel select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    display: block;
+    width: 40%;
+    max-width: 320px;
+    height: 40px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgb(30, 223, 4);
+    background-color: black;
+    background-image: none;
+    border: 1px solid rgb(30, 223, 4);
+    -ms-word-break: normal;
+    word-break: normal;
+}
+.panier-vide {
+    display: inline-block;
+    margin-left: 65%;
+    color: grey;
+}
+.prix-panier-atm {
+    color: white;
+    margin-left: 80%;
+}
 .payment-info {
     width: 100%;
     height: 50%;
-    background-color: slateblue;
+    background-color: black;
 }
 .payment-price {
     align-self: center;
@@ -795,6 +880,16 @@ form.paiement {
     border: none;
     border-radius: 5px;
 }
+.add-items {
+    margin-left: 90em;
+    width: 15em;
+    height: 30px;
+    background-color: black;
+    color: rgb(30, 223, 4);
+    border: 1px solid rgb(30, 223, 4);
+    border-radius: 5px;
+}
+
 
 /*--------------------------------------------------*/
 /*-----------------Bas de page----------------------*/
