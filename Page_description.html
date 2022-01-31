@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,39 +61,39 @@
     </nav>
     <nav class = "navbar">
         <ul>
-            <li class="menu"><a href ="#">Composants</a>
+            <li class="menu"><a href ="Page_Composants.html">Composants</a>
                 <ul class = "sous-menu">
-                    <li><a href="#">Processeurs</a></li>
-                    <li><a href="#">Carte Graphique</a></li>
-                    <li><a href="#">Alimentation</a></li>
-                    <li><a href="#">Carte mère</a></li>        
+                    <li><a href="Page_Composants.html">Processeurs</a></li>
+                    <li><a href="Page_Composants.html">Carte Graphique</a></li>
+                    <li><a href="Page_Composants.html">Alimentation</a></li>
+                    <li><a href="Page_Composants.html">Carte mère</a></li>        
                 </ul>
             </li>
-            <li class="menu"><a href = "#">Objets</a>
+            <li class="menu"><a href = "Page_Composants.html">Objets</a>
                 <ul class = "sous-menu">
-                    <li><a href="#">Tours</a></li>
-                    <li><a href="#">Ordinateurs portables</a></li>
-                    <li><a href="#">Ecrans</a></li>
-                    <li><a href="#">Souris</a></li>
+                    <li><a href="Page_Composants.html">Tours</a></li>
+                    <li><a href="Page_Composants.html">Ordinateurs portables</a></li>
+                    <li><a href="Page_Composants.html">Ecrans</a></li>
+                    <li><a href="Page_Composants.html">Souris</a></li>
         
                 </ul>
             </li>
         
-            <li class="menu"><a href = "#">Périphérique</a>
+            <li class="menu"><a href = "Page_Composants.html">Périphérique</a>
                 <ul class = "sous-menu">
-                    <li><a href="#">Claviers</a></li>
-                    <li><a href="#">Souris</a></li>
-                    <li><a href="#">Imprimantes</a></li>
-                    <li><a href="#">Casques</a></li>
-                    <li><a href="#">Enceintes</a></li>
+                    <li><a href="Page_Composants.html">Claviers</a></li>
+                    <li><a href="Page_Composants.html">Souris</a></li>
+                    <li><a href="Page_Composants.html">Imprimantes</a></li>
+                    <li><a href="Page_Composants.html">Casques</a></li>
+                    <li><a href="Page_Composants.html">Enceintes</a></li>
         
                 </ul>
             </li>
-            <li class = "menu"><a href= "#">A propos</a></li>
+            <li class = "menu"><a href= "Page_A_propos.html">A propos</a></li>
 
-            <li class = "menu"><a href = "#">Description</a></li>
+            <li class = "menu"><a href = "Page_description.html">Description</a></li>
                 <li>
-                <form action="" class="search-bar">
+                <form action="Page_Composants.html" class="search-bar">
                     <a href ="Page_Composants.html"></a>
                     <input type="search" name="search" pattern=".*\S.*" placeholder = "Rechercher un produit" required>
                     <button class="search-btn" type="submit">
@@ -102,16 +102,30 @@
             </form>
             </li>
             <li class = "shopping-cart">
-                <a href ="" class = "click-panier"><img alt= "Logo" src = "Ressources/shopping_cart.png" class = " logo-panier"></a>
+                <a href ="Page_panier_vide.html" class = "click-panier"><img alt= "Logo" src = "Ressources/shopping_cart.png" class = " logo-panier"></a>
             </li>
         </ul>
     </nav>
     <div class ="container-explication">
         <div class= "img-explication">
+            <img src="Ressources/navbar_prems.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>Notre site a commencé avec cette barre d'onglet</h3>
+            <p>Celle-ci est faite à partir de liste <strong>imbriqué</strong> dans d'autre liste sauf que cette dernière ne sont pas montré tout le temps</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/navbar_sec.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>La révélation du menu déroulant</h3>
+            <p>En réalité, notre imbriquation de liste <strong>ne s'affiche que lorsqu'on passe le curseur sur la première liste</strong>, on affiche ensuite le contenu de la deuxieme créant ainsi un menu déroulant</p>
+        </div>
+        <div class= "img-explication">
             <img src="Ressources/Diapo_defilement.PNG" alt="">
         </div>
         <div class = "code-explication">
-            <h3> Image qui défile automatiquement dans la page d'accueil</h3>
+            <h3>Image qui défile automatiquement dans la page d'accueil</h3>
             <p>Le but de cette partie est de chargé toutes les images <strong>l'une derrière les autres</strong> puis avec l'attribut <strong>overflow : hidden</strong> on les cache.</p>
             <p>Puis grâce à une animation <strong>slideshow durant 25 secondes tournant en boucle</strong>, on définit le delay d'apparition de chaque image en changeant l'opacité.</p>
         </div>
@@ -119,15 +133,61 @@
             <img src="Ressources/recherche_1.PNG" alt="">
         </div>
         <div class = "code-explication">
-            <h3> Première partie de la barre de recherche dans la barre d'onglet</h3>
+            <h3>Première partie de la barre de recherche dans la barre d'onglet</h3>
             <p>Tout d'abord, la loupe est faite à partir de <strong>ligne que l'on transforme grâce à l'attribut transform</strong> puis on définit la taille de la barre de recherche en elle-même</p>
         </div>
         <div class= "img-explication">
             <img src="Ressources/recherche_2.PNG" alt="">
         </div>
         <div class = "code-explication">
-            <h3> L'esthetique avant et après avoir appuyé sur la loupe</h3>
+            <h3>L'esthetique avant et après avoir appuyé sur la loupe</h3>
             <p>Maintenant que l'on a défini l'animation, on peut s'attaquer a la forme que prendre la barre de recherche <strong>avant</strong> et <strong>après</strong> avoir appuyé sur la loupe</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/recherche_3.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>Quelque rajout après le focus sur le background de la loupe mais pas que</h3>
+            <p>Grâce aux attributs css de base et un panel de selection sur les class, on peut affiner et terminé le style de notre barre de recherche</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/select_1.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>Un menu de selection </h3>
+            <p>Pour cette partie de notre balise <strong>select</strong>, rien de très hardue, il n'y a que les deux flèches à la verticale qui sont faites en <strong>CSS</strong></p>
+            <p>Le reste n'est que du <strong>positioning</strong></p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/défilement_image_flex.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>Un autre moyen de créer un défilement d'image</h3>
+            <p>Le principe de ce défilement d'image est que <strong>les images sont toutes placé côte à côte grâce à l'attribut flex</strong></p>
+            <p>Puis grâce à <strong>l'overflow : hidden</strong>, on créer une fenêtre composé de toute les images</p>
+            <p>On rajoute ensuite une animation de défilement de droite à gauche ainsi qu'une durée</p>
+            <p>Enfin il faut rajouter un <strong>@keyframes</strong> dans le css nous permettant de gérer selon les pourcentages la position du défilement</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/responsive_1.PNG" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>La première partie du responsive</h3>
+            <p>Cette partie consiste à <strong>cacher</strong> la barre de d'onglet lorsqu'on est sur mobile et <strong>afficher</strong> un menu burger à la place</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/responsive_2.png" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>La partie présentation du menu déroulant de la partie mobile</h3>
+            <p>On met en <strong>forme</strong> le menu déroulant, puis grâce aux attributs <strong>transform cube-bezier</strong>, on créer l'animation de la croix lorsque l'on ferme notre menu</p>
+        </div>
+        <div class= "img-explication">
+            <img src="Ressources/responsive_3.png" alt="">
+        </div>
+        <div class = "code-explication">
+            <h3>La fin d'une aventure</h3>
+            <p>Cette partie n'est autre que le style qui gère <strong>l'ouverture des sous menu</strong>, ressemblant un peu à la façon d'ouverture de notre menu déroulant sur navigateur web</p>
         </div>
     </div>
     <footer>
