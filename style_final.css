@@ -588,6 +588,41 @@ div.search-list{
     margin-top: 5%;
 }
 
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .prod-recherche{
+        margin-top:4em;
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    div.search-list{
+        margin: 0 auto;
+    }
+    .prod-recherche ul.article-list li img{
+        max-width: 220px;
+        width:60%;
+    }
+    .text-grey {
+        font-size: 14px;
+    }
+    .mini-list{
+        font-size: 12px;
+    }
+    .prod-recherche ul.article-list li .description h3.new, 
+    .prod-recherche ul.article-list li .description h3.exclusif{
+        height: 21px;
+        padding: 0;
+    }
+    .description .information-article{
+        font-size: 14px;
+    }
+    .description .information-article::after{
+        display: none;
+    }
+}
+
+
 /*--------------------------------------------------*/
 /*--------------Page de description-----------------*/
 /*------------------composant-----------------------*/
@@ -728,6 +763,25 @@ td {
     color: grey;
     border-bottom: 1px solid lightgray;
     padding: 20px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin-top: 4em;
+    }
+    .container-image{
+        width: 100%;
+    }
+    .info-description {
+        width: 100%;
+    }
+    .add-cart {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
 }
 
 /*--------------------------------------------------*/
@@ -975,4 +1029,56 @@ select::-ms-expand {
     text-decoration: underline;
     text-decoration-color: rgb(21, 160, 3);
     text-underline-offset: 0.25em;
+}
+
+/*  responsive */
+
+.nav_bas_tel{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navzone{
+        display: none;
+    }
+    .nav_bas_tel{
+        display: block;
+        position: absolute;
+        background-color: rgb(17, 17, 17);
+        width: 100%;
+    }
+
+    .nav_bas_tel li {
+        list-style-type: none;
+    }
+
+    .nav_bas_tel button {
+        font-size: 18px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        color: whitesmoke;
+    }
+
+    .nav_bas_tel button:focus {
+        outline: 0;
+        text-decoration: underline;
+    }
+
+    .sous_categ_bas{
+        display: none;
+        position: absolute;
+        padding:10px;
+    }
+
+    .sous_categ_bas a{
+        color: darkgrey;
+    }
+
+    .nav_bas_tel button:focus + .sous_categ_bas,
+    .sous_categ_bas:hover{
+        display: block;
+        position: static;
+    }
+
 }
